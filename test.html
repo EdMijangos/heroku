@@ -1,0 +1,19 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<h1>Edu</h1>
+		<canvas id="canvas" width="256px" height="256px"></canvas>
+	</body>
+	<script>
+		const canvas = document.getElementById("canvas");
+		const ctx = canvas.getContext("2d");
+		const image = new Image();
+		image.src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Yo_logo.png"
+		image.onload = ()=>{
+			ctx.drawImage(image, 0, 0, 256, 256);
+			
+		}
+	</script>
+</html>
